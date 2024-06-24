@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastre-se</h1>
+
+        <a href="#">Entrar</a>
+
+        <form action="cadastro.php" method="post" autocomplete="on">
+
+                <div class="cadastro">
+                    <label for="ipnome">Primeiro Nome</label> 
+                    <input type="text" name="pnome" id="ipnome" required minlength="3" maxlength="20" placeholder="Digite seu primeiro nome" autocomplete="name">
+                </div>
+            
+                <div class="cadastro">
+                    <label for="isobr">Sobrenome</label>
+                    <input type="text" name="sobr" id="isobr" required minlength="3" maxlength="20" placeholder="Digite seu sobrenome" autocomplete="name">
+                </div>
+            
+                <div class="cadastro">
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" required minlength="10" maxlength="30" placeholder="Digite seu email" autocomplete="email">
+                </div>
+            
+                <div class="cadastro">
+                    <label for="icel">Celular</label> 
+                    <input type="tel" name="cel" id="icel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}\d{4,5}$" placeholder="(xx) xxxx-xxxx">
+                </div>
+
+                <div class="cadastro">
+                    <label for="isenha">Senha</label> 
+                    <input type="password" name="senha" id="isenha" required autocomplete="new-password" placeholder="Digite sua senha" minlength="10" maxlength="25">
+                </div>
+
+            <div class="cadastro">
+                <label for="icsenha">Confirmar sua Senha</label>
+                <input type="password" name="csenha" id="icsenha" required placeholder="Digite sua senha novamente" minlength="10" maxlength="25">
+            </div>
+
+            <div id="genero">
+                <legend>Gênero</legend>
+
+                <div class="opcao">
+                    <input type="radio" name="genero" id="igfem" value="F"> <label for="igfem">Feminino</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="radio" name="genero" id="igmas" value="M"> <label for="igmas">Masculino</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="radio" name="genero" id="igout" value="Outro"> <label for="igout">Outros</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="radio" name="genero" id="ignao" value="prefiro_nao_dizer"> <label for="ignao">Prefiro não dizer</label>
+                </div>
+
+                <div id="continuar">
+                    <input type="submit" value="Continuar">
+                </div>
+                
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Feito por: <a href="https://github.com/campelolara" target="_blank">Lara Campelo</a></p>
+    </footer>
+</body>
+</html>

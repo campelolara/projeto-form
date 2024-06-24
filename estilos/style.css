@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* 
+pequenas telas: até 600px
+celular: de 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px
+*/
+
+:root {
+    --cor01: #8C7BFF;
+    --cor02: #FEA4FE;
+    --cor03: #48D987;
+    --cor04: #FDD201;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(-45deg, var(--cor01) 20%, var(--cor02));
+    height: 100%;
+}
+
+main {
+    margin: auto;  
+    background-color: white;
+    width: 85%;
+    padding: 30px 15px 20px 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+main > h1 {
+    font-size: 2em;
+    display: inline;
+}
+
+main > a {
+    float: right;
+    background-color: var(--cor01);
+    width: 75px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    color: white;
+    margin: 5px 20px 0px 0px;
+}
+
+main > a:hover {
+    background-color: #7b6be6;
+}
+
+form {
+    margin-top: 30px;
+}
+
+form > div.cadastro {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+form > div.cadastro > input {
+    display: block;
+    border: none;
+    box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+}
+
+form > div#genero {
+    padding: 10px;
+}
+
+form > div#genero > legend {
+    margin: 10px 0px;
+}
+
+div.opcao {
+    margin-bottom: 5px;
+    font-size: .9em;
+}
+
+div#continuar > input {
+    background-color: var(--cor01);
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    color: white;
+    margin: 20px 10px 10px 10px;
+    border: none;
+}
+
+div#continuar > input:hover {
+    background-color: #7b6be6;
+}
+
+footer {
+    text-align: center;
+}
+
+footer > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
+/* 
+pequenas telas: até 600px
+celular: de 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    
+}
